@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content horizontally */
+    background-color: aquamarine;
+    min-height: 100vh; /* Full height of the viewport */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.carousel-item .custom-img {
+    width: 100%; /* Full width of its container */
+    height: auto; /* Adjust height automatically */
+    object-fit: cover; /* Cover the area without distortion */
+}
+
+h1 {
+    color: green;
+    font-size: 2rem; /* Responsive font size */
+    font-weight: bold;
+}
+
+.custom-margin {
+    margin: 2rem auto; /* Top and bottom margin, centered horizontally */
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+p {
+    font-size: 1.25rem; /* Smaller font size for mobile */
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-style: oblique;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem; /* Smaller font size on smaller screens */
+    }
+    p {
+        font-size: 1rem; /* Adjust paragraph font size */
+    }
+    .custom-margin {
+        margin: 1rem; /* Smaller margins on smaller screens */
+    }
+}
